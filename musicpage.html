@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Score Creator</title>
+
+<body> 
+    
+<div class="center">
+  <h1>Make your Score</h1>
+  <form> 
+    <input type="text" id="musicnote">
+    <label id="addnote2">Add note format: (C#5)</label>
+  </form>
+
+  <form>
+    <input type="text" id="time">
+    <label id="addtime">Add time signature format: (4/4) </label>
+  </form> 
+
+  <form>
+    <input type="text" id="key">
+    <label id="addkey">Add key format: (D Major) </label>
+  </form>
+
+  <form>
+    <input type="text" id="clef">
+    <label id="addclef">Add clef format: (Treble) </label>
+  </form>
+
+
+  <form>
+    <input type="text" id="length">
+    <label id="addlength">Add note length format: (Quarter) </label>
+  </form>
+
+  <form>
+    <input type="text" id="bpm_in">
+    <label id="bpm_but">Add BPM format: (120)</label>
+  </form>
+  <form>
+    <button id="addnote">Press this button to add your note, after filling out all boxes (fill in every box every time)</button>
+  </form>
+  
+  <button id="remove">Clear score and all local storage</button>
+  <div id="play_id">
+    <button id="play">Press to Play! </button>
+  </div>
+  <br> 
+  <br>
+  <br>
+</div>
+  <div id="output"></div>
+<script src="https://cdn.jsdelivr.net/npm/vexflow@4.2.2/build/cjs/vexflow.js"></script>
+<script src="http://unpkg.com/tone"></script>
+<!--vexflow.js is NOT mine; neither is Tone.js-->
+<script src="musicscorer.js"></script>
+<link rel="stylesheet" href="musicstyle.css">
+</head>
+</body>
+</html>
